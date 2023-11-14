@@ -18,6 +18,9 @@ namespace R504_TP03_Factory_Commandes.Core.Client
             if (commande.Valide())
             {
                 commande.Paye();
+            } else
+            {
+                Console.WriteLine("The command is not valid.");
             }
         }
     }

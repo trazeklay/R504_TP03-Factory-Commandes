@@ -12,7 +12,7 @@ namespace R504_TP03_Factory_Commandes.Core.Client
     {
         protected override Commande.Commande CreeCommande()
         {
-            return new Commande.CommandeComptant();
+            return new CommandeComptant();
         }
     }
 }
