@@ -5,7 +5,7 @@ Console.WriteLine("1: Cash Command");
 Console.WriteLine("2: Credit Command");
 
 string choice = Console.ReadLine();
-Client client = null;
+Client client;
 
 switch (choice)
 {
