@@ -12,12 +12,14 @@ namespace R504_TP03_Factory_Commandes.Core.Client
     {
         protected abstract Commande.Commande CreeCommande();
 
-        public void NouvelleCommande()
+        public void NouvelleCommande(double montant)
         {
             Commande.Commande commande = CreeCommande();
+
+
             if (commande.Valide())
             {
-                commande.Paye();
+                commande.Paye(montant);
             } else
             {
                 Console.WriteLine("The command is not valid.");

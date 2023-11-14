@@ -13,9 +13,9 @@ namespace R504_TP03_Factory_Commandes.Core.Commande
             return true;
         }
 
-        public override void Paye()
+        public override void Paye(double montant)
         {
-            Console.WriteLine("The cash order has been paid.");
+            Console.WriteLine($"The cash order has been paid. Price - {montant}€");
         }
     }
 }
